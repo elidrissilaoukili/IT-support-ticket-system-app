@@ -1,0 +1,233 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: fit-content;
+}
+
+.sidebar-container {
+    position: relative;
+    height: 110vh;
+}
+
+/* Initial state of the sidebar */
+.sidebar {
+    flex: 0 0 250px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.5);
+    margin: 0.3rem;
+    border-radius: 15px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* transition: width 0.5s ease-in-out, box-shadow 0.3s ease, background-color 0.3s ease-in-out; */
+    z-index: 99;
+    overflow-y: hidden;
+    width: 0px;
+    height: 0;
+    max-height: 0;
+    /* display: none; */
+    z-index: 100;
+}
+
+/* Sidebar when expanded */
+.sidebar.open {
+    /* display: block; */
+    width: 250px;
+    height: 720px;
+    max-height: 720px;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.6);
+    /* transition: height 0.5s ease-in-out, width 0.5s ease-in-out, box-shadow 0.3s ease, background-color 0.3s ease; */
+    z-index: 100;
+}
+
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        position: absolute;
+    }
+}
+
+.openside-btn {
+    position: relative;
+}
+
+.opn-btn {
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    padding: 2px 5px;
+    border-radius: 10px;
+    border: 2px rgb(20, 40, 61) solid;
+    color: rgb(255, 255, 255);
+    background-color: rgb(20, 40, 61);
+    cursor: pointer;
+    z-index: 100;
+}
+
+.content {
+    max-width: 2200px;
+    margin: 0 auto;
+    flex: 1;
+    padding: 0px;
+    overflow-x: auto;
+    overflow-y: auto;
+
+    scrollbar-width: thin;
+    scrollbar-color: #222222 #f1f1f1;
+}
+
+.link-dashes {
+    display: block;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 0.2px solid rgba(175, 175, 175, 0.363);
+    color: #4b4b4b;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+}
+
+.link-dashes.active {
+    background-color: rgb(53, 53, 53);
+    color: #ffffff;
+    transform: scale(1.05);
+    padding-left: 2.5rem;
+}
+
+.link-dashes:hover {
+    color: #696969;
+    background-color: rgba(233, 233, 233, 0.479);
+}
+
+
+
+
+.home-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3f3f3f;
+    transition: 0.2s ease-in-out;
+}
+
+.home-link:hover {
+    color: #3f3f3f;
+    border-bottom: 5px solid #cccccc81;
+    transition: 0.2s ease-in-out;
+}
+
+.logout-link {
+    display: block;
+    text-align: left;
+    padding: 0.5rem 1rem;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ff2424de;
+    transition: 0.2s ease-in-out;
+}
+
+.logout-link:hover {
+    background-color: #ffb1b146;
+    transition: 0.2s ease-in-out;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+}
+
+.dropdown-button {
+    text-align: left;
+    width: 100%;
+    padding: 10px 20px;
+    border-bottom: 1px rgba(112, 128, 144, 0.205) solid;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    background-color: rgba(222, 237, 240, 0.394);
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-menu a {
+    padding: 4px 12px;
+    padding-left: 35px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* 
+*
+* for charts */
+.admin-charts {
+    height:100vh;
+}
+
+.admin-charts-title {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.admin-charts-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 200px;
+}
+
+/* 
+* for pagintion */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    /* position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

@@ -4,25 +4,8 @@ import AuthenticatedLayout from "@/layouts/AuthenticatedLayout";
 
 import Footer from '../components/Footer';
 import {
-  EngineeringIcon,
   MenuIcon,
-  HourglassBottomIcon,
-  CategoryIcon,
-  InventoryIcon,
-  LocalShippingIcon,
-  MessageIcon,
-  ReviewsIcon,
-  DoneAllIcon,
-  NewReleasesIcon,
-  PriceCheckIcon,
-  VerifiedIcon,
-  InsightsIcon,
-  RemoveDoneIcon,
-  SupervisedUserCircleIcon,
-  AddBusinessIcon,
-  ExtensionIcon,
-  ArrowDropDownIcon,
-  ArrowDropUpIcon
+  CategoryIcon
 } from '@/components/Icons'
 import "./Dashboard.css";
 

@@ -1,4 +1,4 @@
-package com.ecomirror.ecomirror.ticket;
+package com.ecomirror.ecomirror.ticket.requests;
 
 import com.ecomirror.ecomirror.ticket.enums.CategoryEnum;
 import com.ecomirror.ecomirror.ticket.enums.PriorityEnum;
@@ -7,25 +7,19 @@ import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.time.LocalDateTime;
-
 @Getter
 @Setter
 public class TicketCreateRequest {
 
-    @NotBlank
+    @NotBlank(message = "title is required")
     private String title;
 
-    @NotBlank
+    @NotBlank(message = "description is required")
     private String description;
 
-    @NotNull
+    @NotNull(message = "priority is required")
     private PriorityEnum priority;
 
-    @NotNull
+    @NotNull(message = "category is required")
     private CategoryEnum category;
-
-    @NotNull
-    private LocalDateTime createAt;
-
 }

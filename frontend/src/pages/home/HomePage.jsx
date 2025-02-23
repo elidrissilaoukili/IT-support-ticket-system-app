@@ -6,7 +6,7 @@ const HomePage = () => {
         <GuestLayout>
             <section>
                 <div class="max-w-4xl mx-auto bg-white rounded-lg p-6">
-                    <h1 class=" font-semibold text-3xl font-bold text-center text-gray-800 mb-4">IT Support Ticket System</h1>
+                    <h1 class=" font-semibold text-3xl text-center text-gray-800 mb-4">IT Support Ticket System</h1>
                     <p class="text-gray-600 mb-6">Develop a simple ticket management application that allows employees to report and track IT issues.</p>
 
                     <h2 class="text-xl font-semibold text-gray-700 mb-2">Requirements</h2>

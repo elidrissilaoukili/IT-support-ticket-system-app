@@ -25,7 +25,7 @@ const PrivateRoute = ({ element: Element, allowedRoles }) => {
     if (loading) return <div className="min-h-screen flex justify-center">
         <div class="relative flex justify-center items-center">
             <div class="absolute animate-spin rounded-full h-32 w-32 border-t-4 border-b-4 border-gray-500"></div>
-            <img src={`${import.meta.env.VITE_API_BASE_URL}/images/avatar-thinking.svg`} class="rounded-full h-28 w-28" />
+            <img src={`/avatar-thinking.svg`} class="rounded-full h-28 w-28" />
         </div>
     </div>; // Prevent showing the page while verifying
 

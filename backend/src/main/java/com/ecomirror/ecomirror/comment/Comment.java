@@ -1,9 +1,7 @@
-package com.ecomirror.ecomirror.ticket;
+package com.ecomirror.ecomirror.comment;
 
-import com.ecomirror.ecomirror.authentication.entity.Role;
-import com.ecomirror.ecomirror.ticket.enums.CategoryEnum;
-import com.ecomirror.ecomirror.ticket.enums.PriorityEnum;
-import com.ecomirror.ecomirror.ticket.enums.TicketStatusEnum;
+import com.ecomirror.ecomirror.ticket.Ticket;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -24,6 +22,7 @@ public class Comment {
     private String comment;
 
     // Each comment has one ticket
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "ticket_id", nullable = false)
     private Ticket ticket;
@@ -49,8 +48,9 @@ public class Comment {
     public Comment() {
     }
 
-    public Comment(String comment, LocalDateTime createdAt, LocalDateTime updatedAt) {
+    public Comment(String comment,  Ticket ticket, LocalDateTime createdAt, LocalDateTime updatedAt) {
         this.comment = comment;
+        this.ticket = ticket;
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
     }

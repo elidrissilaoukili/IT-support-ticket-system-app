@@ -84,7 +84,7 @@ const Profile = () => {
 
   return (
     <AuthenticatedLayout>
-      <h1>Profile</h1>
+      <h1 className='text-3xl text-center p-4 font-semibold'>Profile</h1>
 
       {/* Profile Update Form */}
       <form className="max-w-5xl mx-auto bg-white p-6 rounded-lg" onSubmit={handleUpdateProfile}>

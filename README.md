@@ -1,6 +1,3 @@
-# IT-support-ticket-system-app
-
-
 # IT Support Ticket System
 
 ## Overview
@@ -148,13 +145,9 @@ This project is not configured for Docker deployment or standalone JAR execution
 ## Documentation
 
 - **README** (this file) for setup instructions.
-- API documentation is provided in a separate Markdown file (if required).
+- API documentation is provided in a separate Markdown file.
 
-## Contribution
+<!-- ## License
 
-Feel free to fork the repository and submit pull requests with improvements.
-
-## License
-
-[MIT License](LICENSE)
+[MIT License](LICENSE) -->
 

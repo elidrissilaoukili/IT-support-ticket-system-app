@@ -171,6 +171,7 @@ const Tickets = () => {
                                     onChange={handleChange}
                                     className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-teal-500 focus:border-teal-500"
                                 >
+                                    <option value="">Select priority</option>
                                     <option value="LOW">LOW</option>
                                     <option value="MEDIUM">MEDIUM</option>
                                     <option value="HIGH">HIGH</option>
@@ -189,6 +190,7 @@ const Tickets = () => {
                                     onChange={handleChange}
                                     className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-teal-500 focus:border-teal-500"
                                 >
+                                    <option value="">Select priority</option>
                                     <option value="NETWORK">NETWORK</option>
                                     <option value="HARDWARE">HARDWARE</option>
                                     <option value="SOFTWARE">SOFTWARE</option>

@@ -23,7 +23,7 @@ public class EmployeesController {
 
     @PostMapping("")
     public ResponseEntity<?> storeEmployees(@Valid @RequestBody RegisterDTO registerDTO, BindingResult result) {
-        ResponseEntity response = employeesService.storeEmployees(registerDTO, result);
+        ResponseEntity<?> response = employeesService.storeEmployees(registerDTO, result);
         return ResponseEntity.ok(response);
     }
 

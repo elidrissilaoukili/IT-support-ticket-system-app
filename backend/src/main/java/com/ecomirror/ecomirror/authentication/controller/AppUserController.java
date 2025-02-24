@@ -3,14 +3,12 @@ package com.ecomirror.ecomirror.authentication.controller;
 import com.ecomirror.ecomirror.authentication.dto.PasswordChangeRequest;
 import com.ecomirror.ecomirror.authentication.dto.UserUpdateRequest;
 import com.ecomirror.ecomirror.authentication.dto.UserResponseDTO;
-import com.ecomirror.ecomirror.authentication.repository.AppUserRepository;
 import com.ecomirror.ecomirror.authentication.service.AppUserService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

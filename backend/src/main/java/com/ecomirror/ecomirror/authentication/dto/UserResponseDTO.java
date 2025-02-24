@@ -1,7 +1,5 @@
 package com.ecomirror.ecomirror.authentication.dto;
 
-import java.util.Set;
-
 import com.ecomirror.ecomirror.authentication.entity.AppUser;
 import lombok.Getter;
 import lombok.Setter;

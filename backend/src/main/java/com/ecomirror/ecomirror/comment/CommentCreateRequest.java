@@ -1,10 +1,8 @@
 package com.ecomirror.ecomirror.comment;
 
-import com.ecomirror.ecomirror.ticket.Ticket;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;
 import lombok.Setter;
-import jakarta.validation.constraints.NotNull;
 
 @Getter
 @Setter

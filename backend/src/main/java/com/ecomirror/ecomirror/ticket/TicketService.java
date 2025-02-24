@@ -5,7 +5,6 @@ import com.ecomirror.ecomirror.authentication.repository.AppUserRepository;
 import com.ecomirror.ecomirror.ticket.enums.TicketStatusEnum;
 import com.ecomirror.ecomirror.ticket.requests.TicketCreateRequest;
 import com.ecomirror.ecomirror.ticket.requests.TicketUpdateRequest;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
